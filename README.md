@@ -6,18 +6,29 @@ To install dependencies:
 bun install
 ```
 
+Create .env file from .env.example
+Maybe ask Nexus lead for the env file
+
 To run:
 
 create file `data.csv` in the certificates folder
 
-and update data inside `generate-data.ts` & `generate-image.ts` files
+and generate JSON data using `generate-data.ts`
+
+& images using `generate-image.ts` files
+
+Update the ID & `message.ts` then broadcast using `sent-mail.ts` or `broadcast.ts`
 
 ```bash
-bun run ./script/certificates/generate-data.ts
+bun run generate-data
 ```
 ```bash
-bun run ./script/certificates/generate-image.ts
+bun run generate-image
 ```
 ```bash
-bun run ./script/broadcast.ts
+bun run broadcast
+```
+
+```bash
+bun run mail
 ```

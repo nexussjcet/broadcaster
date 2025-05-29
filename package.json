@@ -6,7 +6,8 @@
   "scripts": {
     "generate-data": "bun run ./script/certificates/generate-data.ts",
     "generate-image": "bun run ./script/certificates/generate-image.ts",
-    "broadcast": "bun run ./script/broadcast.ts"
+    "broadcast": "bun run ./script/broadcast.ts",
+    "mail": "bun run ./script/sent-mail.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

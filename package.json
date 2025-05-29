@@ -1,0 +1,31 @@
+{
+  "name": "broadcast",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate-data": "bun run ./script/certificates/generate-data.ts",
+    "generate-image": "bun run ./script/certificates/generate-image.ts",
+    "broadcast": "bun run ./script/broadcast.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/nodemailer": "^6.4.17",
+    "@types/qrcode": "^1.5.5",
+    "@types/qrcode-terminal": "^0.12.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "jimp-compact": "^0.16.1-2",
+    "json-2-csv": "^5.5.9",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.3",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0",
+    "zod": "^3.25.36"
+  }
+}
